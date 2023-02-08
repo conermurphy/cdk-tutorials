@@ -3,6 +3,7 @@
   "ignorePatterns": ["/**/cdk.out/"],
   "rules": {
     "@typescript-eslint/restrict-template-expressions": "off",
-    "no-new": "off"
+    "no-new": "off",
+    "import/no-extraneous-dependencies": "off"
   }
 }
