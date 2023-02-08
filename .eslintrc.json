@@ -1,0 +1,8 @@
+{
+  "extends": "conermurphy",
+  "ignorePatterns": ["/**/cdk.out/"],
+  "rules": {
+    "@typescript-eslint/restrict-template-expressions": "off",
+    "no-new": "off"
+  }
+}
