@@ -17,7 +17,7 @@ export class DynamodbCompressionStack extends Stack {
       billingMode: BillingMode.PAY_PER_REQUEST,
     });
 
-    // 👇 Add Global Secondary Index for the NextAuth Table
+    // 👇 Add Global Secondary Index for the dbTable
     dbTable.addGlobalSecondaryIndex({
       indexName: 'GSI1',
       partitionKey: { name: 'date', type: AttributeType.STRING },
