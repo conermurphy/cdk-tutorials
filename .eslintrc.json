@@ -1,6 +1,17 @@
 {
   "extends": "conermurphy",
   "ignorePatterns": ["/**/cdk.out/"],
+  "plugins": ["import"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": [
+          "./*/tsconfig.json"
+        ]
+      }
+    }
+  },
   "rules": {
     "@typescript-eslint/restrict-template-expressions": "off",
     "no-new": "off",
