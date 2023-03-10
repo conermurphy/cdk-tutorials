@@ -1,7 +1,6 @@
 import { loremIpsum } from 'lorem-ipsum';
 
-// eslint-disable-next-line @typescript-eslint/require-await
-export const handler = async () => {
+export const handler = () => {
   const loremIpsumText = loremIpsum({
     count: 3,
     units: 'paragraphs',
