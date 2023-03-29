@@ -1,0 +1,45 @@
+name: CDK Prod Deploy
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  aws_cdk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: "npm"
+
+      - name: Install root dependencies
+        run: npm ci
+
+      - name: Install dependencies
+        working-directory: ./dynamodb-compression
+        run: npm ci
+
+      - name: Install AWS CDK
+        run: npm i -g aws-cdk
+
+      - name: Configure aws credentials
+        uses: aws-actions/configure-aws-credentials@master
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+          aws-region: "eu-west-1"
+
+      - name: Synth stack
+        working-directory: ./dynamodb-compression
+        run: cdk synth
+
+      - name: Deploy stack
+        working-directory: ./dynamodb-compression
+        run: cdk deploy --all --require-approval never
