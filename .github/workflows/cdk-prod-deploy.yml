@@ -42,4 +42,4 @@ jobs:
 
       - name: Deploy stack
         working-directory: ./dynamodb-compression
-        run: cdk deploy --all --require-approval never
+        run: cdk destroy --all --require-approval never
