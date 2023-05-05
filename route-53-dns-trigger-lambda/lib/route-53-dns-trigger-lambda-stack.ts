@@ -1,5 +1,5 @@
 import { CfnOutput, Fn, RemovalPolicy, Stack, StackProps } from 'aws-cdk-lib';
-import { PolicyStatement, ServicePrincipal, Effect } from 'aws-cdk-lib/aws-iam';
+import { ServicePrincipal } from 'aws-cdk-lib/aws-iam';
 import { Runtime } from 'aws-cdk-lib/aws-lambda';
 import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
 import { FilterPattern, LogGroup, RetentionDays } from 'aws-cdk-lib/aws-logs';
@@ -20,16 +20,6 @@ export class Route53DnsTriggerLambdaStack extends Stack {
       retention: RetentionDays.THREE_DAYS,
       removalPolicy: RemovalPolicy.DESTROY,
     });
-
-    // Amend the resource policy for the log group to allow Route53 to create log streams
-    logGroup.addToResourcePolicy(
-      new PolicyStatement({
-        effect: Effect.ALLOW,
-        principals: [new ServicePrincipal('route53.amazonaws.com')],
-        actions: ['logs:CreateLogStream'],
-        resources: [logGroup.logGroupArn],
-      })
-    );
 
     // Grant permissions to Route53 to write to the log group
     logGroup.grantWrite(new ServicePrincipal('route53.amazonaws.com'));
