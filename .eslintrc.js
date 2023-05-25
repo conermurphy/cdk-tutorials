@@ -16,13 +16,33 @@ module.exports = {
       extends: ['conermurphy'],
       parserOptions: {
         tsconfigRootDir: __dirname,
-        project: ['./tsconfig.json', './*/tsconfig.json'],
+        project: ['./tsconfig.json'],
+      },
+      settings: {
+        'import/resolver': {
+          typescript: {
+            project: ['./tsconfig.json'],
+          },
+        },
+      },
+      rules: {
+        'no-new': 'off',
+      },
+    },
+    {
+      files: ['./**/*.ts', './**/*.tsx'],
+      plugins: ['import', '@typescript-eslint'],
+      parser: '@typescript-eslint/parser',
+      extends: ['conermurphy'],
+      parserOptions: {
+        tsconfigRootDir: __dirname,
+        project: ['./*/tsconfig.json'],
       },
       settings: {
         'import/resolver': {
           typescript: {
             tsconfigRootDir: __dirname,
-            project: ['./tsconfig.json', './*/tsconfig.json'],
+            project: ['./*/tsconfig.json'],
           },
         },
       },
