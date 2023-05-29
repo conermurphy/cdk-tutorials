@@ -7,12 +7,14 @@ import {
 const route53 = new Route53Client({});
 
 async function getRecords(zoneId: string) {
+  // Get all of the current records for the hosted zone
   const { ResourceRecordSets } = await route53.send(
     new ListResourceRecordSetsCommand({ HostedZoneId: zoneId })
   );
 
   if (!ResourceRecordSets) return undefined;
 
+  // Filter the records to only include A records
   const aRecords = JSON.stringify(
     ResourceRecordSets?.filter((record) => record.Type === 'A')
   );
@@ -24,6 +26,7 @@ async function getRecords(zoneId: string) {
 export const handler = async () => {
   const { zoneId = '', zoneName = '' } = process.env;
 
+  // Print out all A reocrds for the hosted zone
   await getRecords(zoneId);
 
   const params = {
@@ -47,7 +50,9 @@ export const handler = async () => {
     },
   };
 
+  // Update the A record for the hosted zone
   await route53.send(new ChangeResourceRecordSetsCommand(params));
 
+  // Print out all A reocrds for the hosted zone
   await getRecords(zoneId);
 };
