@@ -1,8 +1,8 @@
 {
-  "name": "route-53-update-a-record",
+  "name": "route-53-update-dbs-record",
   "version": "0.1.0",
   "bin": {
-    "route-53-update-a-record": "bin/route-53-update-a-record.js"
+    "route-53-update-dns-record": "bin/route-53-update-dns-record.js"
   },
   "scripts": {
     "build": "tsc",

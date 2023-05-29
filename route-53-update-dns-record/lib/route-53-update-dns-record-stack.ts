@@ -5,7 +5,7 @@ import { NodejsFunction } from 'aws-cdk-lib/aws-lambda-nodejs';
 import { ARecord, HostedZone } from 'aws-cdk-lib/aws-route53';
 import { Construct } from 'constructs';
 
-export class Route53UpdateARecordStack extends Stack {
+export class Route53UpdateDNSRecordStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
