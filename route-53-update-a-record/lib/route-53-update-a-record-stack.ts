@@ -9,7 +9,6 @@ export class Route53UpdateARecordStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    // Domain we plan on monitoring the logs for and want to trigger the lambda function for
     const domain = 'yourdomain.com';
 
     // Define the Route53 hosted zone for our domain
