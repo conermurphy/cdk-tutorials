@@ -26,7 +26,7 @@ async function getRecords(zoneId: string) {
 export const handler = async () => {
   const { zoneId = '', zoneName = '' } = process.env;
 
-  // Print out all A reocrds for the hosted zone
+  // Print out all A records for the hosted zone
   await getRecords(zoneId);
 
   const params = {
@@ -53,6 +53,6 @@ export const handler = async () => {
   // Update the A record for the hosted zone
   await route53.send(new ChangeResourceRecordSetsCommand(params));
 
-  // Print out all A reocrds for the hosted zone
+  // Print out all A records for the hosted zone
   await getRecords(zoneId);
 };
