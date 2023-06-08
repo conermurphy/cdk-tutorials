@@ -11,7 +11,7 @@ import { FilterPattern, MetricFilter } from 'aws-cdk-lib/aws-logs';
 import { Subscription, SubscriptionProtocol, Topic } from 'aws-cdk-lib/aws-sns';
 import { Construct } from 'constructs';
 
-export class CloudwatchAlarmsSesNotificationsStack extends cdk.Stack {
+export class CloudwatchAlarmsSnsNotificationsStack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 

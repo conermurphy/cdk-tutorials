@@ -1,8 +1,8 @@
 {
-  "name": "cloudwatch-alarms-ses-notifications",
+  "name": "cloudwatch-alarms-sns-notifications",
   "version": "0.1.0",
   "bin": {
-    "cloudwatch-alarms-ses-notifications": "bin/cloudwatch-alarms-ses-notifications.js"
+    "cloudwatch-alarms-sns-notifications": "bin/cloudwatch-alarms-sns-notifications.js"
   },
   "scripts": {
     "build": "tsc",
