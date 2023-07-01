@@ -1,7 +1,6 @@
 module.exports = {
   extends: 'conermurphy',
   ignorePatterns: ['/**/cdk.out/'],
-  plugins: ['unused-imports'],
   root: true,
   settings: {
     react: {
@@ -27,6 +26,7 @@ module.exports = {
       },
       rules: {
         'no-new': 'off',
+        'import/no-extraneous-dependencies': 'off',
       },
     },
     {
@@ -48,6 +48,7 @@ module.exports = {
       },
       rules: {
         'no-new': 'off',
+        'import/no-extraneous-dependencies': 'off',
       },
     },
   ],

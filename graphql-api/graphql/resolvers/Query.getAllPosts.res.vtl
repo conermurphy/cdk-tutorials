@@ -1,0 +1,5 @@
+#if($ctx.result && $ctx.result.items)
+  $util.toJson($ctx.result.items)
+#else
+  []
+#end

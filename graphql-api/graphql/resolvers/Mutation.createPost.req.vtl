@@ -1,0 +1,13 @@
+{
+  "version": "2017-02-28",
+  "operation": "PutItem",
+  "key": {
+    "id": $util.dynamodb.toDynamoDBJson($util.autoId())
+  },
+  "attributeValues": {
+    "title": $util.dynamodb.toDynamoDBJson($ctx.arguments.input.title),
+    "description": $util.dynamodb.toDynamoDBJson($ctx.arguments.input.description),
+    "author": $util.dynamodb.toDynamoDBJson($ctx.arguments.input.author),
+    "publicationDate": $util.dynamodb.toDynamoDBJson($ctx.arguments.input.publicationDate)
+  }
+}
