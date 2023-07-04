@@ -38,7 +38,6 @@ export class GraphqlApiWithApiKeyAuthStack extends Stack {
           },
         },
       },
-      xrayEnabled: true,
     });
 
     // 3. Link the GraphQL API with the DynamoDB table
