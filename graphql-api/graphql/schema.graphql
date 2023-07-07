@@ -7,7 +7,7 @@ type Post {
 }
 
 type Query {
-  getPost(id: String!): Post
+  getPost(id: ID!): Post
   getAllPosts: [Post]
 }
 
