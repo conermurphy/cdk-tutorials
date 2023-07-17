@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project
+# Scheduling events with the EventBridge Scheduler
 
-This is a blank project for CDK development with TypeScript.
+Learn how to schedule events to perform actions like triggering a Lambda function with the new EventBridge Scheduler.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- EventBridge
+- Lambda (Demonstration Purposes)
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/aws-eventbridge-scheduler-cdk)
+- [YouTube](https://youtu.be/hIJ6KIMUl6w)

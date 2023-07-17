@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project
+# Build a REST API Using API Gateway, Lambda, and DynamoDB With API Key Authentication
 
-This is a blank project for CDK development with TypeScript.
+Learn how to build a REST API with API key authentication that allows the creation, deletion, and retrieval of blog posts from a DynamoDB table.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- Lambda
+- API Gateway
+- DynamoDB
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/build-rest-api-aws-cdk-api-gateway-lambda-dynamodb-api-key-authentication)

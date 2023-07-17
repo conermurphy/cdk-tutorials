@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project
+# Create a GraphQL API: Step-by-Step Guide with AppSync and DynamoDB
 
-This is a blank project for CDK development with TypeScript.
+Learn how to build a GraphQL API with API key authentication that allows the creation, deletion, and retrieval of blog posts from a DynamoDB table.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- AppSync
+- DynamoDB
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/graphql-api-guide-aws-appsync-dynamodb-aws-cdk)

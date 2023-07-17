@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project
+# Custom CloudWatch Alarms with SNS Notifications for Detecting Error Messages
 
-This is a blank project for CDK development with TypeScript.
+Learn how to configure custom CloudWatch alarms to detect errors and target phrases in your Lambda functions and send a notification to an email address using SNS.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- CloudWatch
+- SNS
+- Lambda
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/building-custom-cloudwatch-alarms-sns-notifications-detecting-error-messages)

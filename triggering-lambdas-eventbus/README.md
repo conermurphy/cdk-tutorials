@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project
+# Trigger a Lambda Function From Another Lambda Function Using an AWS EventBridge Event Bus
 
-This is a blank project for CDK development with TypeScript.
+Learn how to trigger a Lambda function from another Lambda function by putting an event on an EventBridge Event Bus.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- Lambda
+- EventBridge
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/trigger-lambda-function-from-lambda-via-eventbridge-event-bus)

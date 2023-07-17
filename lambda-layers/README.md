@@ -1,14 +1,11 @@
-# Welcome to your CDK TypeScript project
+# Configuring Lambda Layers for Lambda Functions
 
-This is a blank project for CDK development with TypeScript.
+Learn how to configure layers for Lambda functions to reduce their bundle size and help improve performance.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- Lambda
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/maximizing-aws-lambda-function-potential-layers-aws-cdk)

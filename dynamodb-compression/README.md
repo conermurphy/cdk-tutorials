@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project
+# Using Compression to Store Attribute Values in DynamoDB
 
-This is a blank project for CDK development with TypeScript.
+Learn how to save money when using DynamoDB by compressing large items before storing them in a DynamoDB table.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- DynamoDB
+- Lambda
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/save-money-using-compression-to-store-attribute-values-in-dynamodb)

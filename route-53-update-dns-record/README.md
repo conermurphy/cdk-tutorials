@@ -1,14 +1,15 @@
-# Welcome to your CDK TypeScript project
+# Updating a DNS Record on a Route 53 Hosted Zone Using a Lambda Function & AWS SDK
 
-This is a blank project for CDK development with TypeScript.
+Learn how to update a DNS Record (A record) on a Route 53 Hosted Zone using a Lambda function and the AWS SDK.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- Lambda
+- Route 53
+- IAM
+- AWS SDK
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/update-dns-record-route-53-lambda-aws-sdk)
+- [YouTube](https://youtu.be/6eEKelokOpo)
