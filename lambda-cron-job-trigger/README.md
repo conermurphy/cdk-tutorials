@@ -7,7 +7,7 @@ Learn how to configure a recurring Lambda function using EventBridge rules and c
 - Lambda
 - EventBridge
 
-## Tutorials
+## Tutorials
 
 - [Blog](https://conermurphy.com/blog/scheduling-lambda-functions-with-cron-jobs-using-aws-cdk)
 - [YouTube](https://youtu.be/cv9V4b6Yp7g)

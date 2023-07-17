@@ -8,6 +8,6 @@ Learn how to configure custom CloudWatch alarms to detect errors and target phra
 - SNS
 - Lambda
 
-## Tutorials
+## Tutorials
 
 - [Blog](https://conermurphy.com/blog/building-custom-cloudwatch-alarms-sns-notifications-detecting-error-messages)

@@ -6,6 +6,6 @@ Learn how to configure layers for Lambda functions to reduce their bundle size a
 
 - Lambda
 
-## Tutorials
+## Tutorials
 
 - [Blog](https://conermurphy.com/blog/maximizing-aws-lambda-function-potential-layers-aws-cdk)

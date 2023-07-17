@@ -7,6 +7,6 @@ Learn how to trigger a Lambda function from another Lambda function by putting a
 - Lambda
 - EventBridge
 
-## Tutorials
+## Tutorials
 
 - [Blog](https://conermurphy.com/blog/trigger-lambda-function-from-lambda-via-eventbridge-event-bus)

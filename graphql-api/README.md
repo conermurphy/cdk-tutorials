@@ -7,6 +7,6 @@ Learn how to build a GraphQL API with API key authentication that allows the cre
 - AppSync
 - DynamoDB
 
-## Tutorials
+## Tutorials
 
 - [Blog](https://conermurphy.com/blog/graphql-api-guide-aws-appsync-dynamodb-aws-cdk)

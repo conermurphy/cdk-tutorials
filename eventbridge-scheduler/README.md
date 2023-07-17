@@ -7,7 +7,7 @@ Learn how to schedule events to perform actions like triggering a Lambda functio
 - EventBridge
 - Lambda (Demonstration Purposes)
 
-## Tutorials
+## Tutorials
 
 - [Blog](https://conermurphy.com/blog/aws-eventbridge-scheduler-cdk)
 - [YouTube](https://youtu.be/hIJ6KIMUl6w)

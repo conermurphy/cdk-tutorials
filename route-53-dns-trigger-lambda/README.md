@@ -8,6 +8,6 @@ Learn how to invoke a Lambda Function by sending a request to a URL connected to
 - Route 53
 - CloudWatch
 
-## Tutorials
+## Tutorials
 
 - [Blog](https://conermurphy.com/blog/route53-hosted-zone-lambda-dns-invocation-aws-cdk)

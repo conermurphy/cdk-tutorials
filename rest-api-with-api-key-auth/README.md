@@ -8,6 +8,6 @@ Learn how to build a REST API with API key authentication that allows the creati
 - API Gateway
 - DynamoDB
 
-## Tutorials
+## Tutorials
 
 - [Blog](https://conermurphy.com/blog/build-rest-api-aws-cdk-api-gateway-lambda-dynamodb-api-key-authentication)

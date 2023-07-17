@@ -9,7 +9,7 @@ Learn how to update a DNS Record (A record) on a Route 53 Hosted Zone using a La
 - IAM
 - AWS SDK
 
-## Tutorials
+## Tutorials
 
 - [Blog](https://conermurphy.com/blog/update-dns-record-route-53-lambda-aws-sdk)
 - [YouTube](https://youtu.be/6eEKelokOpo)

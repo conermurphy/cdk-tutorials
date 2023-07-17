@@ -7,6 +7,6 @@ Learn how to save money when using DynamoDB by compressing large items before st
 - DynamoDB
 - Lambda
 
-## Tutorials
+## Tutorials
 
 - [Blog](https://conermurphy.com/blog/save-money-using-compression-to-store-attribute-values-in-dynamodb)
