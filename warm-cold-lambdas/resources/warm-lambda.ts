@@ -8,6 +8,7 @@ export const handler = (
     }
   >
 ) => {
+  // If triggered by the cron job, return early from the function
   if (event.source === 'aws.events') {
     return;
   }
