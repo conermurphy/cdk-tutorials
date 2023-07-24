@@ -9,4 +9,4 @@ Learn how to reduce the latency and improve the performance of your Lambda Funct
 
 ## Tutorials
 
-- [Blog]()
+- [Blog](https://conermurphy.com/blog/pre-warming-lambda-functions-eventbridge-rules)
