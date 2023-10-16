@@ -1,6 +1,6 @@
 module.exports = {
   extends: 'conermurphy',
-  ignorePatterns: ['/**/cdk.out/'],
+  ignorePatterns: ['/**/cdk.out/', '*.js', '**/*.d.ts', '**/node_modules/**'],
   root: true,
   settings: {
     react: {
