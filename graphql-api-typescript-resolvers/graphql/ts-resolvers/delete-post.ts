@@ -9,5 +9,7 @@ export function request(ctx: Context<MutationDeletePostArgs>) {
 }
 
 export function response(ctx: Context) {
-  return ctx.result as Post;
+  const result = ctx.result as Post;
+
+  return result.id;
 }
