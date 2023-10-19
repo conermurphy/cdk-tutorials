@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project
+# Building a GraphQL API With TypeScript Resolvers Using AWS AppSync and CDK
 
-This is a blank project for CDK development with TypeScript.
+Learn to create a powerful and scalable GraphQL API using AWS AppSync with TypeScript resolvers via the AWS CDK.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- AppSync
+- DynamoDB
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/graphql-api-typescript-resolvers-aws-appsync-cdk)
