@@ -1,8 +1,8 @@
 import { remove } from '@aws-appsync/utils/dynamodb';
 import { Context } from '@aws-appsync/utils';
-import { MutationDeletePostArgs, Post } from '../types/graphql';
+import { DeletePostMutationVariables, Post } from '../types/graphql';
 
-export function request(ctx: Context<MutationDeletePostArgs>) {
+export function request(ctx: Context<DeletePostMutationVariables>) {
   return remove({
     key: { id: ctx.args.id },
   });

@@ -1,69 +1,69 @@
-export type Maybe<T> = T | null;
-export type InputMaybe<T> = Maybe<T>;
-export type Exact<T extends { [key: string]: unknown }> = {
-  [K in keyof T]: T[K];
-};
-export type MakeOptional<T, K extends keyof T> = Omit<T, K> & {
-  [SubKey in K]?: Maybe<T[SubKey]>;
-};
-export type MakeMaybe<T, K extends keyof T> = Omit<T, K> & {
-  [SubKey in K]: Maybe<T[SubKey]>;
-};
-export type MakeEmpty<
-  T extends { [key: string]: unknown },
-  K extends keyof T
-> = { [_ in K]?: never };
-export type Incremental<T> =
-  | T
-  | {
-      [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never;
-    };
-/** All built-in and custom scalars, mapped to their actual values */
-export type Scalars = {
-  ID: { input: string; output: string };
-  String: { input: string; output: string };
-  Boolean: { input: boolean; output: boolean };
-  Int: { input: number; output: number };
-  Float: { input: number; output: number };
-};
+/* tslint:disable */
+/* eslint-disable */
+//  This file was automatically generated and should not be edited.
 
 export type CreatePostInput = {
-  author: Scalars['String']['input'];
-  description: Scalars['String']['input'];
-  id?: InputMaybe<Scalars['ID']['input']>;
-  publicationDate: Scalars['String']['input'];
-  title: Scalars['String']['input'];
-};
-
-export type Mutation = {
-  __typename?: 'Mutation';
-  createPost?: Maybe<Post>;
-  deletePost?: Maybe<Scalars['ID']['output']>;
-};
-
-export type MutationCreatePostArgs = {
-  input: CreatePostInput;
-};
-
-export type MutationDeletePostArgs = {
-  id: Scalars['ID']['input'];
+  id?: string | null,
+  title: string,
+  description: string,
+  author: string,
+  publicationDate: string,
 };
 
 export type Post = {
-  __typename?: 'Post';
-  author: Scalars['String']['output'];
-  description: Scalars['String']['output'];
-  id: Scalars['ID']['output'];
-  publicationDate: Scalars['String']['output'];
-  title: Scalars['String']['output'];
+  __typename: "Post",
+  id: string,
+  title: string,
+  description: string,
+  author: string,
+  publicationDate: string,
 };
 
-export type Query = {
-  __typename?: 'Query';
-  getAllPosts?: Maybe<Array<Maybe<Post>>>;
-  getPost?: Maybe<Post>;
+export type CreatePostMutationVariables = {
+  input: CreatePostInput,
 };
 
-export type QueryGetPostArgs = {
-  id: Scalars['ID']['input'];
+export type CreatePostMutation = {
+  createPost?:  {
+    __typename: "Post",
+    id: string,
+    title: string,
+    description: string,
+    author: string,
+    publicationDate: string,
+  } | null,
+};
+
+export type DeletePostMutationVariables = {
+  id: string,
+};
+
+export type DeletePostMutation = {
+  deletePost?: string | null,
+};
+
+export type GetPostQueryVariables = {
+  id: string,
+};
+
+export type GetPostQuery = {
+  getPost?:  {
+    __typename: "Post",
+    id: string,
+    title: string,
+    description: string,
+    author: string,
+    publicationDate: string,
+  } | null,
+};
+
+export type GetAllPostsQuery = {
+  getAllPosts?:  Array< {
+    __typename: "Post",
+    id: string,
+    title: string,
+    description: string,
+    author: string,
+    publicationDate: string,
+  } | null > | null,
 };

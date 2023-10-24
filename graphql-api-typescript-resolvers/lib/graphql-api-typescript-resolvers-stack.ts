@@ -11,9 +11,9 @@ import { Construct } from 'constructs';
 import {
   GraphqlApi,
   AuthorizationType,
-  SchemaFile,
   FunctionRuntime,
   Code,
+  Definition,
 } from 'aws-cdk-lib/aws-appsync';
 import path = require('path');
 
@@ -31,7 +31,9 @@ export class GraphqlApiTypescriptResolversStack extends Stack {
     // 2. Create an AppSync GraphQL API
     const api = new GraphqlApi(this, 'graphql-api', {
       name: 'graphql-api',
-      schema: SchemaFile.fromAsset('./graphql/schema.graphql'),
+      definition: Definition.fromFile(
+        path.join(__dirname, '../graphql/schema.graphql')
+      ),
       authorizationConfig: {
         defaultAuthorization: {
           authorizationType: AuthorizationType.API_KEY,
