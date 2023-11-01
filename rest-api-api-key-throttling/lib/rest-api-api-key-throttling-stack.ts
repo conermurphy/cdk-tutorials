@@ -38,7 +38,7 @@ export class RestApiApiKeyThrottlingStack extends Stack {
       ],
       // NOTE: Throttling is purposefully set low to allow for easier testing of the rate limit
       throttle: {
-        rateLimit: 1,
+        rateLimit: 2,
         burstLimit: 1,
       },
     });
