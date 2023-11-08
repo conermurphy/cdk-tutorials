@@ -53,8 +53,9 @@ Here is a current list of all of the projects covered by this repository.
 - [Reducing Latency: Pre-Warming Lambda Functions with EventBridge Rules](https://github.com/conermurphy/cdk-tutorials/tree/main/pre-warming-lambdas-eventbridge-rules)
 - [A Practical Guide to Creating a REST API for Sending Emails using AWS SES, API Gateway, and Lambda via AWS CDK](https://github.com/conermurphy/cdk-tutorials/tree/main/ses-send-email-api)
 - [Building a GraphQL API With TypeScript Resolvers Using AWS AppSync and CDK](https://github.com/conermurphy/cdk-tutorials/tree/main/graphql-api-typescript-resolvers)
+- [Throttling API Keys in an API Gateway REST API using Usage Plans](https://github.com/conermurphy/cdk-tutorials/tree/main/rest-api-api-key-throttling)
 
-## Contributing
+## Contributing
 
 We welcome contributions to the CDK Tutorials repository! If you have any improvements, fixes, or new examples to add, please feel free to open a pull request. For major changes, please open an issue first to discuss the proposed changes.
 
