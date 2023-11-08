@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project
+# Throttling API Keys in an API Gateway REST API using Usage Plans
 
-This is a blank project for CDK development with TypeScript.
+Learn about API throttling on AWS API Gateway and how to implement it using usage plans and API keys with an example REST API deployed via the AWS CDK.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- Lambda
+- API Gateway
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/api-gateway-usage-plans-api-key-throttling)
