@@ -51,9 +51,10 @@ Here is a current list of all of the projects covered by this repository.
 - [Build a REST API Using API Gateway, Lambda, and DynamoDB With API Key Authentication](https://github.com/conermurphy/cdk-tutorials/tree/main/rest-api-with-api-key-auth)
 - [Create a GraphQL API: Step-by-Step Guide with AppSync and DynamoDB](https://github.com/conermurphy/cdk-tutorials/tree/main/graphql-api)
 - [Reducing Latency: Pre-Warming Lambda Functions with EventBridge Rules](https://github.com/conermurphy/cdk-tutorials/tree/main/pre-warming-lambdas-eventbridge-rules)
-- [A Practical Guide to Creating a REST API for Sending Emails using AWS SES, API Gateway, and Lambda via AWS CDK](https://github.com/conermurphy/cdk-tutorials/tree/main/ses-send-email-api)
+- [Handling Contact Forms Submissions With a Custom REST API using AWS SES, API Gateway, and Lambda](https://github.com/conermurphy/cdk-tutorials/tree/main/ses-send-email-api)
 - [Building a GraphQL API With TypeScript Resolvers Using AWS AppSync and CDK](https://github.com/conermurphy/cdk-tutorials/tree/main/graphql-api-typescript-resolvers)
 - [Throttling API Keys in an API Gateway REST API using Usage Plans](https://github.com/conermurphy/cdk-tutorials/tree/main/rest-api-api-key-throttling)
+- [Generating Text Using AWS Bedrock via Lambda in TypeScript with the AWS SDK](https://github.com/conermurphy/cdk-tutorials/tree/main/bedrock-sdk-requests)
 
 ## Contributing
 

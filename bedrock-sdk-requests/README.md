@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project
+# Generating Text Using AWS Bedrock via Lambda in TypeScript with the AWS SDK
 
-This is a blank project for CDK development with TypeScript.
+Learn how to generate text with AWS Bedrock's AI models from a Lambda function using the AWS SDK and TypeScript, all provisioned using the AWS CDK.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- Lambda
+- Bedrock
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/generating-text-aws-bedrock-lambda-typescript-sdk)
