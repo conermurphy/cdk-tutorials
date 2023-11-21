@@ -2,13 +2,14 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-import * as APITypes from "./graphql";
+import * as APITypes from './graphql';
 type GeneratedMutation<InputType, OutputType> = string & {
   __generatedMutationInput: InputType;
   __generatedMutationOutput: OutputType;
 };
 
-export const createPost = /* GraphQL */ `mutation CreatePost($input: CreatePostInput!) {
+export const createPost =
+  /* GraphQL */ `mutation CreatePost($input: CreatePostInput!) {
   createPost(input: $input) {
     id
     title
@@ -19,9 +20,9 @@ export const createPost = /* GraphQL */ `mutation CreatePost($input: CreatePostI
   }
 }
 ` as GeneratedMutation<
-  APITypes.CreatePostMutationVariables,
-  APITypes.CreatePostMutation
->;
+    APITypes.CreatePostMutationVariables,
+    APITypes.CreatePostMutation
+  >;
 export const deletePost = /* GraphQL */ `mutation DeletePost($id: ID!) {
   deletePost(id: $id)
 }

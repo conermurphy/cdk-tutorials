@@ -1,8 +1,7 @@
 {
-    "name": "loreum-ipsum",
-    "version": "0.1.0",
-    "dependencies": {
-      "lorem-ipsum": "^2.0.8"
-    }
+  "name": "loreum-ipsum",
+  "version": "0.1.0",
+  "dependencies": {
+    "lorem-ipsum": "^2.0.8"
   }
-  
+}
