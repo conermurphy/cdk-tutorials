@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project
+# Leveraging AWS WAF to Throttle API Gateway Rest API Requests
 
-This is a blank project for CDK development with TypeScript.
+In this tutorial, learn how to protect and throttle requests to an AWS API Gateway REST API using AWS WAF based on IP addresses. Deployed using the AWS CDK.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- API Gateway
+- WAF
+- Lambda
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/aws-waf-throttle-api-gateway-rest-api-requests)
