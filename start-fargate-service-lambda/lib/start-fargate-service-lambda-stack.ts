@@ -27,7 +27,7 @@ export class StartFargateServiceLambdaStack extends cdk.Stack {
       this,
       'FargateService',
       {
-        cluster: cluster,
+        cluster,
         serviceName,
         cpu: 256,
         memoryLimitMiB: 512,
