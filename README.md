@@ -57,6 +57,7 @@ Here is a current list of all of the projects covered by this repository.
 - [Generating Text Using AWS Bedrock via Lambda in TypeScript with the AWS SDK](https://github.com/conermurphy/cdk-tutorials/tree/main/bedrock-sdk-requests)
 - [Image Generation and Storage using Stable Diffusion, AWS Bedrock, and TypeScript](https://github.com/conermurphy/cdk-tutorials/tree/main/bedrock-sdk-requests)
 - [Leveraging AWS WAF to Throttle API Gateway Rest API Requests](https://github.com/conermurphy/cdk-tutorials/tree/main/rest-api-throttling-waf)
+- [Starting an Existing Fargate Service Using Lambda and the AWS SDK](https://github.com/conermurphy/cdk-tutorials/tree/main/start-fargate-service-lambda)
 
 ## Contributing
 

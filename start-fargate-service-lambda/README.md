@@ -1,14 +1,12 @@
-# Welcome to your CDK TypeScript project
+# Starting an Existing Fargate Service Using Lambda and the AWS SDK
 
-This is a blank project for CDK development with TypeScript.
+Learn how to deploy a new AWS Fargate service using the AWS CDK as well as how to start that service on-demand using Lambda and the AWS SDK!
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- Lambda
+- Fargate
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/start-existing-fargate-service-lambda-aws-sdk)
