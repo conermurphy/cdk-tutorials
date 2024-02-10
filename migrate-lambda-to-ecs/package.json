@@ -1,0 +1,29 @@
+{
+  "name": "migrate-lambda-to-ecs",
+  "version": "0.1.0",
+  "bin": {
+    "migrate-lambda-to-ecs": "bin/migrate-lambda-to-ecs.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.11.6",
+    "aws-cdk": "2.124.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.3.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.124.0",
+    "constructs": "^10.0.0",
+    "express": "^4.18.2",
+    "source-map-support": "^0.5.21"
+  }
+}
