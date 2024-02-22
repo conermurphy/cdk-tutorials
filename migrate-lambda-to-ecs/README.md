@@ -1,14 +1,14 @@
-# Welcome to your CDK TypeScript project
+# Shifting from AWS Lambda to AWS ECS/Fargate: A Migration Guide
 
-This is a blank project for CDK development with TypeScript.
+Migrate from AWS Lambda to AWS ECS/Fargate with ease. Discover the key steps needed for a smooth migration to optimize your infrastructure.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- Lambda
+- ECS
+- Fargate
+- ECR
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/aws-lambda-to-ecs-fargate-migration-guide)
