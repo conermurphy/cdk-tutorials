@@ -21,26 +21,6 @@ export class AppsyncEnvsStack extends cdk.Stack {
       removalPolicy: cdk.RemovalPolicy.DESTROY,
     });
 
-    // Create a new IAM role for our DB table for AppSync to use
-    const dataSourceRole = new Role(this, 'appsync-envs-datasource-role', {
-      assumedBy: new ServicePrincipal('appsync.amazonaws.com'),
-    });
-
-    // Attach the required DynamoDB permissions to our role
-    dataSourceRole.addToPolicy(
-      new PolicyStatement({
-        actions: [
-          'dynamodb:Query',
-          'dynamodb:GetItem',
-          'dynamodb:Scan',
-          'dynamodb:PutItem',
-          'dynamodb:UpdateItem',
-          'dynamodb:DeleteItem',
-        ],
-        resources: [table.tableArn],
-      })
-    );
-
     // Create a new GraphQL API using CfnGraphQLApi as GraphQLApi does not support environment variables yet
     const api = new CfnGraphQLApi(this, 'appsync-envs-graphql-api', {
       name: 'appsync-envs-api',
@@ -63,6 +43,26 @@ export class AppsyncEnvsStack extends cdk.Stack {
       apiId: api.attrApiId,
       definition: readFileSync('./graphql/schema.graphql', 'utf-8'),
     });
+
+    // Create a new IAM role for our DB table for AppSync to use
+    const dataSourceRole = new Role(this, 'appsync-envs-datasource-role', {
+      assumedBy: new ServicePrincipal('appsync.amazonaws.com'),
+    });
+
+    // Attach the required DynamoDB permissions to our role
+    dataSourceRole.addToPolicy(
+      new PolicyStatement({
+        actions: [
+          'dynamodb:Query',
+          'dynamodb:GetItem',
+          'dynamodb:Scan',
+          'dynamodb:PutItem',
+          'dynamodb:UpdateItem',
+          'dynamodb:DeleteItem',
+        ],
+        resources: [table.tableArn],
+      })
+    );
 
     // Create a new data source to link our API and DB together
     const dataSource = new CfnDataSource(this, 'appsync-envs-data-source', {
