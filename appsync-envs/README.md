@@ -1,14 +1,11 @@
-# Welcome to your CDK TypeScript project
+# Integrating Environment Variables with AWS AppSync via the AWS CDK
 
-This is a blank project for CDK development with TypeScript.
+Learn how to integrate environment variables in a GraphQL API using AWS AppSync, deployed via the AWS CDK in this comprehensive guide.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- AppSync
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/aws-asppsync-cdk-environment-variables)
