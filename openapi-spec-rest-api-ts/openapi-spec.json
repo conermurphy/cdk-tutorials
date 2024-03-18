@@ -1,0 +1,151 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Books API",
+    "version": "1.0.0",
+    "description": "API for managing books in a database"
+  },
+  "paths": {
+    "/books": {
+      "post": {
+        "summary": "Add a new book",
+        "description": "Add a new book to the database",
+        "operationId": "addBook",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["title", "author"],
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "example": "The Great Gatsby"
+                  },
+                  "author": {
+                    "type": "string",
+                    "example": "F. Scott Fitzgerald"
+                  },
+                  "year": {
+                    "type": "integer",
+                    "example": 1925
+                  },
+                  "genre": {
+                    "type": "string",
+                    "example": "Fiction"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Book created",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "example": "1"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "arn:aws:apigateway:{{region}}:lambda:path/2015-03-31/functions/{{post_function_arn}}/invocations",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "type": "aws_proxy"
+        }
+      },
+      "get": {
+        "summary": "Get all books",
+        "description": "Retrieve a list of all books in the database",
+        "operationId": "getAllBooks",
+        "responses": {
+          "200": {
+            "description": "A list of books",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "example": "1"
+                      },
+                      "title": {
+                        "type": "string",
+                        "example": "The Great Gatsby"
+                      },
+                      "author": {
+                        "type": "string",
+                        "example": "F. Scott Fitzgerald"
+                      },
+                      "year": {
+                        "type": "integer",
+                        "example": 1925
+                      },
+                      "genre": {
+                        "type": "string",
+                        "example": "Fiction"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        },
+        "x-amazon-apigateway-integration": {
+          "uri": "arn:aws:apigateway:{{region}}:lambda:path/2015-03-31/functions/{{get_all_function_arn}}/invocations",
+          "responses": {
+            "default": {
+              "statusCode": "200"
+            }
+          },
+          "passthroughBehavior": "when_no_match",
+          "httpMethod": "POST",
+          "type": "aws_proxy"
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "x-api-key"
+      }
+    }
+  },
+  "security": [
+    {
+      "ApiKeyAuth": []
+    }
+  ]
+}
