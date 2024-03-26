@@ -12,7 +12,7 @@ export const handler = async (event: APIGatewayProxyEvent) => {
     if (!event.body) {
       return {
         statusCode: 400,
-        body: JSON.stringify({ message: 'Missing body' }),
+        body: JSON.stringify({ message: 'Invalid input' }),
       };
     }
 
@@ -41,7 +41,7 @@ export const handler = async (event: APIGatewayProxyEvent) => {
 
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: error }),
+      body: JSON.stringify({ message: 'Internal server error' }),
     };
   }
 };
