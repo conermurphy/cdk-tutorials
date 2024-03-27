@@ -60,6 +60,7 @@ Here is a current list of all of the projects covered by this repository.
 - [Starting an Existing Fargate Service Using Lambda and the AWS SDK](https://github.com/conermurphy/cdk-tutorials/tree/main/start-fargate-service-lambda)
 - [Shifting from AWS Lambda to AWS ECS/Fargate: A Migration Guide](https://github.com/conermurphy/cdk-tutorials/tree/main/migrate-lambda-to-ecs)
 - [Integrating Environment Variables with AWS AppSync via the AWS CDK](https://github.com/conermurphy/cdk-tutorials/tree/main/appsync-envs)
+- [Automatically Create an AWS API Gateway REST API and Related TypeScript Types via an OpenAPI Specification and AWS CDK](https://github.com/conermurphy/cdk-tutorials/tree/main/openapi-spec-rest-api-ts)
 
 ## Contributing
 

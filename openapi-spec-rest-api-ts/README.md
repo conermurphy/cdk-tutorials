@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project
+# Automatically Create an AWS API Gateway REST API and Related TypeScript Types via an OpenAPI Specification and AWS CDK
 
-This is a blank project for CDK development with TypeScript.
+Learn how to automate the creation of an AWS API Gateway REST API and corresponding TypeScript types using OpenAPI specifications and AWS CDK.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- API Gateway
+- Lambda
+- DynamoDB
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/create-aws-api-gateway-rest-api-typescript-types-via-openapi-aws-cdk)
