@@ -1,4 +1,4 @@
-# Configuring DKIM/SPF rules for AWS SES email addresses using the AWS CDK! Stop your emails going to spam and protect your domain!
+# Configuring DKIM/SPF For AWS SES Email Addresses Using The AWS CDK! Stop Emails Going to Spam and Protect Your Domain!
 
 Set up DKIM/SPF for AWS SES using the AWS CDK to prevent spam and protect your domain! Ensure your emails are trusted and delivered.
 
