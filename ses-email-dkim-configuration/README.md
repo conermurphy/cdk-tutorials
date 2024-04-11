@@ -1,14 +1,11 @@
-# Welcome to your CDK TypeScript project
+# Configuring DKIM/SPF rules for AWS SES email addresses using the AWS CDK! Stop your emails going to spam and protect your domain!
 
-This is a blank project for CDK development with TypeScript.
+Set up DKIM/SPF for AWS SES using the AWS CDK to prevent spam and protect your domain! Ensure your emails are trusted and delivered.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## AWS Services Used
 
-## Useful commands
+- SES
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+## Tutorials
+
+- [Blog](https://conermurphy.com/blog/configuring-dkim-spf-aws-ses-cdk-spam-prevention-email-protection)

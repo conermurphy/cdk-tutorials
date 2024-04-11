@@ -61,6 +61,7 @@ Here is a current list of all of the projects covered by this repository.
 - [Shifting from AWS Lambda to AWS ECS/Fargate: A Migration Guide](https://github.com/conermurphy/cdk-tutorials/tree/main/migrate-lambda-to-ecs)
 - [Integrating Environment Variables with AWS AppSync via the AWS CDK](https://github.com/conermurphy/cdk-tutorials/tree/main/appsync-envs)
 - [Automatically Create an AWS API Gateway REST API and Related TypeScript Types via an OpenAPI Specification and AWS CDK](https://github.com/conermurphy/cdk-tutorials/tree/main/openapi-spec-rest-api-ts)
+- [Configuring DKIM/SPF rules for AWS SES email addresses using the AWS CDK! Stop your emails going to spam and protect your domain!](https://conermurphy.com/blog/configuring-dkim-spf-aws-ses-cdk-spam-prevention-email-protection)
 
 ## Contributing
 
